@@ -1,0 +1,8 @@
+{
+  "图片": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"],
+  "工作文档": [".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx"],
+  "视频": [".mp4", ".mov", ".mkv", ".avi"],
+  "音乐": [".mp3", ".wav", ".flac"],
+  "压缩包": [".zip", ".rar", ".7z"],
+  "安装包": [".dmg", ".pkg", ".exe", ".msi", ".apk"]
+}
