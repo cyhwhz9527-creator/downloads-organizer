@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "downloads-organizer"
+version = "0.1.0"
+description = "一个自动整理下载文件夹的小工具：按类型分类、预览、撤销，跨平台、零依赖"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "陈宇航" }]
+keywords = ["cli", "automation", "file-organizer", "downloads", "productivity"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://github.com/cyhwhz9527-creator/downloads-organizer"
+Issues = "https://github.com/cyhwhz9527-creator/downloads-organizer/issues"
+
+# 安装后会生成一个 `organize-downloads` 命令，可在任意目录直接调用
+[project.scripts]
+organize-downloads = "organizer:main"
+
+[tool.setuptools]
+py-modules = ["organizer"]

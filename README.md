@@ -56,6 +56,22 @@ python organizer.py ~/Downloads --undo
 > Windows 用户把 `~/Downloads` 换成你的下载文件夹路径，例如
 > `C:\Users\你的用户名\Downloads`
 
+### 4. （可选）安装成命令，随处可用
+
+如果你想直接用 `organize-downloads` 命令、不用每次都写 `python organizer.py`，可以一键安装：
+
+```bash
+pip install git+https://github.com/cyhwhz9527-creator/downloads-organizer.git
+```
+
+之后在任意目录都能直接运行：
+
+```bash
+organize-downloads ~/Downloads --dry-run
+organize-downloads ~/Downloads
+organize-downloads ~/Downloads --undo
+```
+
 ## ⚙️ 自定义分类规则
 
 新建一个 `my_rules.json`，按 `"分类名": ["扩展名", ...]` 的格式写：
